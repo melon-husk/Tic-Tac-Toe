@@ -1,84 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-  font-family: "Work Sans", sans-serif;
-  background-color: blueviolet;
+  background: #6889ff;
 }
-#someText {
+.mainContainer {
+  background: #6889ff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.landingPageText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.5vh;
+  align-items: center;
   text-align: center;
-  font-size: xx-large;
-  display: none;
+  color: #ffffff;
 }
-#mainTicTacToeContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0fr 0fr 0fr;
-  /* gap: 1px 1px; */
-  grid-template-areas: "tic0 tic1 tic2" "tic3 tic4 tic5" "tic6 tic7 tic8";
-  width: 50%;
-  margin: auto;
-  border: 5px solid violet;
-  border-radius: 15px;
+.singlePageBox.singlePageBox {
+  width: 90vw;
+  height: 20vh;
+  margin: 2vw auto;
+  background: #000000;
+  box-shadow: 1vw 1vw 1px rgba(0, 0, 0, 0.25);
 }
-.child {
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  height: 10vh;
-  padding-top: 5vh;
-  font-size: xx-large;
-  width: 100%;
+.singlePageBox:hover {
   cursor: pointer;
-  /* border-radius: 15px; */
 }
-.child:hover {
-  background-color: pink;
+.multiPageBox.multiPageBox {
+  width: 90vw;
+  height: 20vh;
+  background: #000000;
+  box-shadow: 1vw 1vw 1px rgba(0, 0, 0, 0.25);
 }
-.tic0 {
-  grid-area: tic0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+.multiPageBox:hover {
+  cursor: pointer;
 }
-
-.tic1 {
-  grid-area: tic1;
-  border-right: 2px solid black; 
-  border-bottom: 2px solid black; 
+@media screen and (max-width: 500px) /* Mobile */ {
+  .singlePageBox.singlePageBox {
+    margin: 2.5vh auto;
+    box-shadow: 1.5vh 1.5vh 1px rgba(0, 0, 0, 0.25);
+  }
+  .multiPageBox.multiPageBox {
+    box-shadow: 1.5vh 1.5vh 1px rgba(0, 0, 0, 0.25);
+  }
 }
-
-.tic2 {
-  grid-area: tic2;
-  border-bottom: 2px solid black;
-}
-
-.tic3 {
-  grid-area: tic3;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  /* border-top: 2px solid black; */
-}
-
-.tic4 {
-  grid-area: tic4;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.tic5 {
-  grid-area: tic5;
-  border-bottom: 2px solid black;
-}
-
-.tic6 {
-  grid-area: tic6;
-  border-right: 2px solid black;
-}
-
-.tic7 {
-  grid-area: tic7;
-  border-right: 2px solid black;
-}
-
-.tic8 {
-  grid-area: tic8;
+@media screen and (max-width: 979px) /* Tablet */ {
+  .singlePageBox.singlePageBox {
+    margin: 2.5vh auto;
+    box-shadow: 1.5vh 1.5vh 1px rgba(0, 0, 0, 0.25);
+  }
+  .multiPageBox.multiPageBox {
+    box-shadow: 1.5vh 1.5vh 1px rgba(0, 0, 0, 0.25);
+  }
 }
