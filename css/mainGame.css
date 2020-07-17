@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: #6889ff;
+}
+
+.playerNameText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.5vh;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.playerNameBox.playerNameBox {
+  width: 90vw;
+  height: 10vh;
+  background: #000000;
+  box-shadow: 1vw 1vw 1px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+.playerName:hover {
+  cursor: pointer;
+}
